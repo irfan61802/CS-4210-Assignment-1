@@ -23,7 +23,6 @@ with open('contact_lens.csv', 'r') as csvfile:
   for i, row in enumerate(reader):
       if i > 0: #skipping the header
          db.append (row)
-         print(row)
 
 #transform the original categorical training features into numbers and add to the 4D array X. For instance Young = 1, Prepresbyopic = 2, Presbyopic = 3
 # so X = [[1, 1, 1, 1], [2, 2, 2, 2], ...]]
